@@ -1,0 +1,36 @@
+<header>
+    <nav class="nav">
+        <h1 class="navTitle">Ecommerce</h1> 
+        <ul class="navList">
+            <a href="/products"><li class="listItems">Productos</li></a>
+            <a href="/carts"><li class="listItems">Carrito</li></a>
+            <a href="/profile"><li class="listItems">Perfil</li></a>
+        </ul>
+        <div class="navButtons">
+            <a href="/logout"><p class="logout">Cerrar Sesión</p></a>
+        </div>
+    </nav>
+</header>
+<h2 class="title">Publicar un producto a la venta</h2>
+
+<form class="sellForm" action="/products/sell" method="post">
+    <div class="formDiv">
+        <label for="product_name">Nombre del producto</label>
+        <input type="text" name="product_name" placeholder="Producto...">
+    </div>
+    <div class="formDiv">
+        <label for="product_price">Precio del producto</label>
+        <input type="number" name="product_price" placeholder="Precio...">
+    </div>
+    <div class="formDiv">
+        <label for="product_image">Imágen del producto</label>
+        <input type="text" name="product_image" placeholder="Link...">
+    </div>
+    <div class="formDiv">
+        <label for="product_stock">Stock del producto</label>
+        <input type="number" name="product_stock" placeholder="Stock...">
+    </div>
+    <div class="formDiv">
+        <button type="submit">Publicar</button>
+    </div>
+</form>

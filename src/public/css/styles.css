@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    color: black;
+    font-family: 'Roboto', sans-serif;
+}
+
+.nav {
+    display: flex;
+    background-color: rgb(157, 24, 24);
+    padding: 2rem;
+    text-transform: uppercase;
+}
+
+.navTitle {
+    width: 30%;
+}
+
+.navList {
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.navButtons {
+    width: 20%;
+}
+
+.buttonList {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+.logout {
+    text-align: center;
+}
+
+.title {
+    text-align: center;
+    padding: 2rem;
+    text-transform: uppercase;
+}
+
+.subtitle {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.loginForm {
+    width: 60%;
+    margin: 2rem auto;
+}
+
+.registerForm {
+    width: 60%;
+    margin: 2rem auto;
+}
+
+.sellForm {
+    width: 60%;
+    margin: 2rem auto;
+}
+
+.formDiv {
+    width: 50%;
+    margin: 2rem auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.formDiv button {
+    margin: 0 auto;
+    width: 25%;
+}
+
+.prodsForSale {
+    width: 80%;
+    margin: 2rem auto;
+    background-color: aqua;
+}
+
+.historyTitle {
+    margin: 2rem;
+    text-align: center;
+}
+
+.historySection {
+    display: flex;
+    text-align: center;
+}
+
+.historyPurchased {
+    width: 50%;
+}
+
+.historySold {
+    width: 50%;
+}
+
