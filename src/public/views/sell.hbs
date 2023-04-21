@@ -13,24 +13,27 @@
 </header>
 <h2 class="title">Publicar un producto a la venta</h2>
 
-<form class="sellForm" action="/products/sell" method="post">
-    <div class="formDiv">
-        <label for="product_name">Nombre del producto</label>
-        <input type="text" name="product_name" placeholder="Producto...">
-    </div>
-    <div class="formDiv">
-        <label for="product_price">Precio del producto</label>
-        <input type="number" name="product_price" placeholder="Precio...">
-    </div>
-    <div class="formDiv">
-        <label for="product_image">Imágen del producto</label>
-        <input type="text" name="product_image" placeholder="Link...">
-    </div>
-    <div class="formDiv">
-        <label for="product_stock">Stock del producto</label>
-        <input type="number" name="product_stock" placeholder="Stock...">
-    </div>
-    <div class="formDiv">
-        <button type="submit">Publicar</button>
-    </div>
+<form id="form" class="productsForm" method="post">
+        <label>Nombre del producto:</label>
+        <input name="product">
+        <label>Precio del producto:</label>
+        <input name="price">
+        <label>URL de la imágen del producto:</label>
+        <input name="url">
+        <label>Stock disponible:</label>
+        <input name="stock">
+        <button class="btn" type="submit">Publicar</button>
+        <label id="noData"></label>
 </form>
+<table id="table" class="productsTable">
+        <tr class="productsTableRow">
+            <th>Producto</th>
+            <th>Precio</th>
+            <th>Imagen</th>
+            <th>Stock</th>
+            <th>Eliminar</th>
+        </tr>
+</table>
+
+<script src="/socket.io/socket.io.js"></script>
+<script src="../js/products.js"></script>

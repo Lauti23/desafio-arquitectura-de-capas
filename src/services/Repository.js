@@ -19,4 +19,8 @@ export class Repository {
     getByUser = async (username) => {
         return await this.dao.findByUser(username, this.collection)
     }
+
+    delete = async (id) => {
+        return await this.dao.remove(id, this.collection)
+    }
 }
